@@ -28,6 +28,7 @@ manager.add_command('shell', Shell(make_context=make_shell_context))
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    a
     form = NameForm()
     if form.validate_on_submit():
         old_name = session.get('name')
